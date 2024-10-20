@@ -8,6 +8,8 @@ const {RouterConfig} = require("./routes/index")
 
 const app = express();
 app.use(express.json());
+console.log("Port:", port);
+console.log("MongoDB URI:", process.env.MONGODB_URI);
 
 mongoose.connect(process.env.MONGODB_URI)
 .then(()=>{
