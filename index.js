@@ -18,9 +18,9 @@ mongoose.connect(process.env.MONGODB_URI)
     console.log("No connection 🥵")
 })
 
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
 RouterConfig(app);
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
